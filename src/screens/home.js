@@ -2,6 +2,7 @@ import React from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 import { Ionicons } from 'react-native-vector-icons'
 
+import {WallpaperList} from './wallpaperList'
 export default class Home extends React.Component{
     constructor(props){
         super(props)
@@ -35,7 +36,9 @@ export default class Home extends React.Component{
                         </View>
                         <View style={{flex:1}}/>
                     </View>
-                    <View style={{flex: 6}}><Text> ESTO ES MAIN </Text></View>
+                    <View style={{flex: 6}}>
+                        <WallpaperList/>
+                    </View>
                 </View>
             </View>
         )
